@@ -1,0 +1,354 @@
+  *{
+    box-sizing: border-box;
+  }
+ 
+ body {
+  font-family: 'League Spartan', sans-serif;
+  background-color: hsl(180, 29%, 50%);
+  background-image: url("bg-header-desktop.svg");
+  background-position:top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.cont{
+  width: 100%;
+  background-color: #f0fafb;
+  min-height: 100vh;
+  margin-top: 10.5%;
+  display: flex;
+  flex-direction: column;
+  
+
+}
+
+.category{
+  color: #6fa8a6;
+  background-color: #c9ebeb;
+  width: max-content;
+  height: max-content;
+  padding:0.4rem;
+  border-radius: 1px;
+  margin: 0 0.5rem;
+}
+
+.lLeft{
+   color: #6fa8a6;
+  background-color: #c9ebeb;
+  width: max-content;
+  height: max-content;
+   
+}
+
+.new{
+   color: white;
+  background-color: #5aa6a6;
+  width: max-content;
+  padding:0.3rem;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  
+}
+
+ .vacansy-box{
+  margin-top: 2rem;
+  width: 80%;
+  margin : 2rem auto;
+   box-shadow: 3px 10px 10px #d9edee;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
+
+ .right{
+  display: flex;
+ flex-wrap: wrap;
+ 
+ 
+ 
+  align-items: center;
+ }
+
+ .featured{
+  padding:0.3rem;
+  padding-bottom: 0.2rem;
+  background-color: #2d3b3a;
+  color: white;
+  border-radius: 20px;
+  width: max-content;
+ }
+
+ .left{
+  display: flex;
+ align-items: center;
+  
+ }
+
+ .list{
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+ align-items: center;
+  box-shadow: 3px 10px 10px #d9edee;
+  z-index: 11;
+  display: none;
+  
+ }
+
+ 
+
+ .clear{
+  background-color: transparent;
+  border: none;
+  color: #63baba;
+  margin-left: auto;
+  text-decoration: underline;
+   
+}
+hr{
+  color: #2d3b3a;
+  height: 1px;
+}
+
+.logo{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+}
+
+.nameline{
+color: #7aaeae;
+}
+
+.position{
+  color: #313938;
+}
+
+.time-line{
+  color:#b6bcbb;
+}
+
+.list-category{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.lRight{
+  background-image: url("icon-remove.svg");
+  background-color: #5ca5a4;
+  background-position: center;
+background-size: calc(0.5);   
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+ 
+
+.catBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+
+}
+
+@media screen and (max-width: 768px){
+body{
+background-image: url("bg-header-mobile.svg")
+}
+
+  .cont{
+     
+    max-width: 480px;
+    width:100%;
+    margin:8rem auto 2rem;
+    
+  }
+  .vacansy{
+    width: 100%;
+  }
+  .vacansy-box{
+    width: 95%;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+  .logo{
+    width:85px;
+    height: 85px;
+    margin-right: 1rem;
+  }
+  
+ .right{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+.list{
+  width: 100%;
+ padding: 0.4rem;
+}
+
+.time-line{
+  font-size: 0.9rem;
+}
+
+.position{
+  font-size: 1.3rem;
+  margin-bottom: -0.1rem;
+  margin-top: -0.2rem;
+}
+
+.category, .lLeft{
+  font-size: 0.85rem;
+}
+
+.list-category{
+   gap: 0.3rem;
+}
+.lLeft{
+   padding: 0.25rem;
+}
+
+.lRight{
+ width: 25px;
+  height: 22px;
+}
+}
+
+
+@media screen and (min-width: 769px)  and (max-width: 1024px){
+  body{
+background-image: url("bg-header-mobile.svg");
+background-size: contain;
+}
+
+  .cont{
+     
+    max-width: 700px;
+    width:100%;
+    margin: 8rem auto 2rem;
+   
+  }
+  .vacansy{
+    width: 100%;
+  }
+  .vacansy-box{
+    width: 95%;
+    flex-direction: column;
+      padding-bottom: 1.3rem;
+  }
+  .logo{
+    width:90px;
+    height: 90px;
+    margin-right: 1rem;
+  }
+  
+ .right{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+}
+.list{
+  width: 98%;
+  margin-top: 0.5rem;
+  padding:0.5rem;
+}
+.time-line{
+  font-size: 0.9rem;
+}
+
+.position{
+  font-size: 1.4rem;
+  margin-bottom: -0.1rem;
+  margin-top: -0.2rem;
+}
+
+.nameline{
+  font-size: 1.1rem;
+}
+
+.category, .lLeft{
+  font-size: 0.92rem;
+}
+
+.lLeft{
+   padding: 0.4rem;
+}
+
+.list-category{
+  gap:0.4rem
+}
+
+.lRight{
+
+  width: 25px;
+}
+
+
+.catBox{
+  height: 27px;
+}
+}
+ 
+
+@media screen and (min-width:  1025px) {
+  .logo{
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+  }
+   .position:hover, .category:hover, .clear:hover, .dlt-btn:hover{
+    cursor: pointer;
+   }
+
+   .category:hover{
+    background-color: #5ca5a4;
+    color: white;
+   }
+   
+   .list{
+    padding: 0.5rem;
+   }
+
+   .position{
+  font-size: 1.6rem;
+  margin-bottom: -0.1rem;
+  margin-top: -0.2rem;
+}
+
+.nameline{
+  font-size: 1.1rem;
+}
+
+.lRight{
+  width: 30px;
+  
+}
+
+.lLeft{
+  padding: 0.4rem;
+  margin: 0 auto;
+}
+
+.lRight:hover{
+background-color: #2d3b3a;
+}
+
+.list-category{
+  gap:0.6rem;
+ 
+}
+}
