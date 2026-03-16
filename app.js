@@ -24,8 +24,7 @@ const logo = document.querySelectorAll(".logo");
  const vacansyBox = document.querySelectorAll(".vacansy-box")
  category.forEach(el => {
     el.addEventListener("click", ()=> {
-        el.style.backgroundColor ="#5ca5a4";
-        el.style.color = "white";
+       
 const filter = document.querySelectorAll(".lLeft");
 const res = [...filter].some(fil => fil.textContent === el.textContent);
 
@@ -46,18 +45,18 @@ lLeft.classList.add("lLeft");
  
  const parent = lRight.closest(".catBox")
 function remEl(){
-    el.style.backgroundColor = "#c9ebeb";
-        el.style.color = "#6fa8a6"; 
+   
   if(listCat.children.length === 0){
     list.style.display = "none";
 }
+updateVacansy()
 }
 
 
  lRight.addEventListener("click", () => {
     parent.remove()
      remEl()
-     updateVacansy()
+      
  })
 
  const parentArr = document.querySelectorAll(".catBox");
@@ -67,7 +66,7 @@ function remEl(){
          parentArr[i].remove()
     }
     remEl()
-    updateVacansy()
+     
  })
   
  
